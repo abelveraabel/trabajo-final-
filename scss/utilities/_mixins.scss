@@ -1,0 +1,17 @@
+@mixin flex ($justify,$align) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@mixin letra ($font-family,$font-size,$font-style,$font-weight) {
+    font-family: serif;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+}
+@mixin letra2 ($font-family,$font-size,$font-style,$font-weight){
+    font-family: cursive;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: bolder;
+}
