@@ -10,12 +10,13 @@
     
 </head>
 <body> 
-  <header>
-    <div class="logo">
-        <img src="./img/mario-nav.png" alt="">
-        <h2 class="game-is-on">game is on</h2>
-    </div>
-    <nav>
+  <header>game is on
+    
+    
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><img src="./img/icono-menu.png" alt=""></label>
+
+    <nav class="menu">
         <ul>
             <li><a href="index.html">inicio</li></a>
             <li><a href="./page/servicios.html">servicios</li></a>
@@ -24,8 +25,9 @@
             
         </ul>
     </nav>
+  
     </header>
-
+<div class="carrousel-trans">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -47,35 +49,89 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+  </div>
+
+
+
       <main>
-        <h2 class="titulo-2">catalogo y ofertas</h2>
-        <section class="catalogo">
-            <img src="./img/clasico1.jpg" alt="catalago">
-            <img src="./img/clasico2.png" alt="catlaogo2">
-            <img src="./img/clasico3.jpg" alt="catalogo3">
-            <img src="./img/clasico4.jpg" alt="catalogo4">
-            <img src="./img/clasico5.png" alt="catalogo5">
-            <img src="./img/clasico6.png" alt="catalogo6">
-        </section>
+        <h2 class="titulo-2">juegos retro</h2>
+        <div class="catalogo">
+          <div>
+            <img class="fotogrid" src="./img/clasico1.jpg" alt="catalago">
+            <h3 class="foto1"></h3>
+          </div>
+          <div>
+            <img class="fotogrid" src="./img/clasico2.png" alt="catlaogo2">
+            <h3 class="foto2"></h3>
+          </div>
+          <div>
+            <img class="fotogrid" src="./img/clasico3.jpg" alt="catalogo3">
+            <h3 class="foto3"></h3>
+          </div>
+          <div>
+            <img class="fotogrid" src="./img/clasico4.jpg" alt="catalogo4">
+            <h3 class="foto4"></h3>
+          </div>
+          <div>
+            <img class="fotogrid" src="./img/clasico5.png" alt="catalogo5">
+            <h3 class="foto5"></h3>
+          </div>
+          <div>
+            <img class="fotogrid" src="./img/clasico6.png" alt="catalogo6">
+            <h3 class="foto6"></h3>
+          </div>
+          <div>
+            <img class="fotogrid" src="./img/clasico8.jpeg" alt="catalogo8">
+            <h3 class="foto7"></h3>
+          </div>
+          <div>
+            <img class="fotogrid" src="./img/clasico9.jpg" alt="clasico9">
+            <h3 class="foto8"></h3>
+          </div>
+          <div>
+            <img class="fotogrid" src="./img/clasico10.jpg" alt="clasico9">
+            <h3 class="foto9"></h3>
+          </div>
+            
+            
+            
+            
+            
+            
+        </div>
 
 
       </main>
 
       <h2 class="titulo-3"> TRAILERS </h2>
       
-      <section class="trailers">
-   
-        <div>  
-            <iframe class="trailers2" src="https://www.youtube.com/embed/mfnc4_LCPNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="container">
+        <div class="heading">
+          <div class="video-container">
+            <div class="video">
+              <iframe class="trailer" src="https://www.youtube.com/embed/1kiW9XykuQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video">
+                <iframe class="trailer" src="https://www.youtube.com/embed/cjd00TgL7NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video">
+                <iframe class="trailer" src="https://www.youtube.com/embed/vtFhDrMIZjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video">
+                <iframe class="trailer" src="https://www.youtube.com/embed/I9vgrm3U3r4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video">
+                <iframe class="trailer" src="https://www.youtube.com/embed/agjWWRV0sMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="video">
+                <iframe class="trailer" src="https://www.youtube.com/embed/mfnc4_LCPNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+          </div>
         </div>
-        <div>
-            <iframe class="trailers2" src="https://www.youtube.com/embed/1kiW9XykuQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div>
-            <iframe  class="trailers2" src="https://www.youtube.com/embed/cjd00TgL7NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-           
-    </section>
+
+      </div>
+
     <section class="curiosidades">
       <div class="card-group">
         <div class="card">
@@ -104,6 +160,8 @@
         </div>
       </div>
       </section>
+
+
       <footer>
 <div class="contenedor-footer">
           <div class="contenedor-parcial">
