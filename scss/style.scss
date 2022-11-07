@@ -93,7 +93,19 @@ body {
     margin: 50px;
     padding: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-right: 2em;
+    
+    h2{
+        font-size: 3em;
+        font-family: fantasy;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        margin-right: 2em;
+        background-image: url(../img/fondoh2.webp);
+    }
+    
     
 }
 
@@ -113,6 +125,8 @@ body {
         position: relative;
         transform-style: preserve-3d;
         transition: 1s;
+        margin: 0;
+
         
         
         
@@ -133,20 +147,72 @@ body {
     backface-visibility: hidden;
     position: absolute;
     
+    
+    
 
 }
 
 .frente{
     background: black;
+    border: 2px solid black;
+    border-radius: 50%;
     img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        
     }
 }
 .atras{
     background: greenyellow;
     transform: rotateY(180deg);
+    border-radius: 50%;
+    text-align: center;
+    p{
+        font-size: 1em;
+        font-family: fantasy;
+        text-align: center;
 
+    }
+    
+
+
+
+}
+
+@media (max-width:390px){
+    .cajadiv{
+        display: flex;
+        flex-direction: column;
+        margin: -10px;
+        justify-content: center;
+        text-align: center;
+        .presentacion{
+            margin-left: -10px;
+        }
+
+        h2{
+            
+            background-position: center;
+        }
+
+    
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+
+            
+        }
+    }
+    .caja{
+        width: 265px;
+        height: 265px;
+        justify-content: center;
+    }
+   
 }
 
 

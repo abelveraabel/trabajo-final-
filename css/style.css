@@ -12,8 +12,9 @@ header {
   header label {
     display: none;
     width: 100%;
-    height: 20px;
-    padding: 20px;
+    height: 5px;
+    padding: 35px;
+    border-radius: 2px;
     border-right: 1px solid white; }
     header label :hover {
       cursor: pointer;
@@ -272,7 +273,30 @@ header {
   margin: 0; }
   .registracion .row {
     margin: 0;
-    margin-top: 5em; }
+    margin-left: 2em;
+    margin-top: 5em;
+    text-align: center; }
+
+#telefono {
+  background: white;
+  color: black;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 45px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 4em; }
+
+.telefono1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  width: 50%;
+  font-family: fantasy;
+  font-weight: bolder;
+  margin-left: 25%;
+  margin-top: 2em;
+  text-align: center; }
 
 footer {
   background-image: url(../img/fondo1.jpg);
@@ -448,7 +472,16 @@ body {
   margin: 50px;
   padding: 30px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: column;
+  margin-right: 2em; }
+  .cajadiv h2 {
+    font-size: 3em;
+    font-family: fantasy;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 2em;
+    background-image: url(../img/fondoh2.webp); }
 
 .caja {
   width: 350px;
@@ -460,7 +493,8 @@ body {
     width: 100%;
     position: relative;
     transform-style: preserve-3d;
-    transition: 1s; }
+    transition: 1s;
+    margin: 0; }
 
 .presentacion:hover {
   transform: rotateY(180deg); }
@@ -472,11 +506,42 @@ body {
   position: absolute; }
 
 .frente {
-  background: black; }
+  background: black;
+  border: 2px solid black;
+  border-radius: 50%; }
   .frente img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; }
 
 .atras {
   background: greenyellow;
-  transform: rotateY(180deg); }
+  transform: rotateY(180deg);
+  border-radius: 50%;
+  text-align: center; }
+  .atras p {
+    font-size: 1em;
+    font-family: fantasy;
+    text-align: center; }
+
+@media (max-width: 390px) {
+  .cajadiv {
+    display: flex;
+    flex-direction: column;
+    margin: -10px;
+    justify-content: center;
+    text-align: center; }
+    .cajadiv .presentacion {
+      margin-left: -10px; }
+    .cajadiv h2 {
+      background-position: center; }
+    .cajadiv img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%; }
+  .caja {
+    width: 265px;
+    height: 265px;
+    justify-content: center; } }
